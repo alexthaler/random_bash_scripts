@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+echo "Copying files as configured to the Backup directory in Private"
+
+rm -r /Volumes/Private/Backup/1Password.agilekeychain/
+cp -r $HOME/Dropbox/1Password.agilekeychain/ /Volumes/Private/Backup/1Password.agilekeychain/
+
 echo "encrypting..."
 
 BACKUP_DIR="/Volumes/Private/Backup"
